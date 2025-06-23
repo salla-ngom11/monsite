@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fff7f9, #fceff4);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+img {
+  width: 50%;
+  height: auto ;
+  border-radius: 10px;
+}
+
+nav {
+  background-color: #e89ebc;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffe2f0;
+  text-decoration: underline;
+}
+
+nav button {
+  background-color: white;
+  color: #e89ebc;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+  background-color: #f6cadd;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  flex: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+h1 {
+  color: #d45d8d;
+  font-size: 28px;
+}
+
+h2 {
+  color: #b64973;
+  font-size: 22px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #e89ebc;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+/* Classes de langue */
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Style pour les projets */
+.project {
+  background-color: white;
+  border: 1px solid #f3d0e0;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h2 {
+  color: #d45d8d;
+  margin-top: 0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #d45d8d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.project a:hover {
+  background-color: #b64973;
+}
+section p i {
+  color: #d45d8d;
+  margin-right: 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+section p a {
+  color: #b64973;
+  text-decoration: none;
+  font-weight: bold;
+}
+section p a:hover {
+  text-decoration: underline;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #d45d8d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-download:hover {
+  background-color: #b64973;
+}

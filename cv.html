@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - Salla Ngom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="projects.html">Projets</a>
+      <a href="contact.html">Contact</a>
+      <a href="cv.html" style="font-weight:bold;">CV</a>
+    </div>
+    <div class="nav-right">
+      <button onclick="switchLang('fr')">FR</button>
+      <button onclick="switchLang('en')">EN</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="fr visible">
+      <h1>Mon CV</h1>
+      <p>Voici mon curriculum vitae professionnel.</p>
+      <a href="mon cv.pdf" download class="btn-download">Télécharger mon CV (PDF)</a>
+    </section>
+    <section class="en hidden">
+      <h1>My Resume</h1>
+      <p>Here is my professional resume.</p>
+      <a href="mon cv.pdf" download class="btn-download">Download my Resume (PDF)</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Salla Ngom
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

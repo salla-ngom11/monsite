@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projets | Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.fr').forEach(el => el.style.display = lang === 'fr' ? 'block' : 'none');
+      document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    }
+  </script>
+</head>
+<body onload="switchLang('fr')">
+    <div class="bubbles">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+  <nav>
+    <a href="index.html">Accueil / Home</a>
+    <a href="apropos.html">À propos / About</a>
+    <a href="projets.html">Projets / Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="cv.html">Mon CV</a>
+    <button onclick="switchLang('fr')">FR</button>
+    <button onclick="switchLang('en')">EN</button>
+  </nav>
+  <main>
+    <section class="fr">
+  <h1>Mes projets</h1>
+  <div class="project">
+    <h2>Calculatrice JavaScript</h2>
+    <p>Une calculatrice simple réalisée avec HTML, CSS et JavaScript.</p>
+    <a href="https://salla-ngom11.github.io/Salla-s-Calculatrice/" target="_blank">Tester la calculatrice</a>
+  </div>
+  <div class="project">
+    <h2>Application météo</h2>
+    <p>Consultez la météo en temps réel en entrant une ville.</p>
+    <a href="https://salla-ngom11.github.io/meteo/" target="_blank">Essayer l'application météo</a>
+  </div>
+</section>
+
+    <section class="en">
+  <h1>My Projects</h1>
+  <div class="project">
+    <h2>JavaScript Calculator</h2>
+    <p>A simple calculator built with HTML, CSS and JavaScript.</p>
+    <a href="https://salla-ngom11.github.io/Salla-s-Calculatrice/" target="_blank">Try the calculator</a>
+  </div>
+  <div class="project">
+    <h2>Weather App</h2>
+    <p>Check the real-time weather by entering a city name.</p>
+    <a href="https://salla-ngom11.github.io/meteo/" target="_blank">Try the weather app</a>
+  </div>
+</section>
+
+  </main>
+  <footer>
+  &copy; 2025 Salla Ngom — Tous droits réservés.
+</footer>
+
+</body>
+</html>

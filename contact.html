@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.fr').forEach(el => el.style.display = lang === 'fr' ? 'block' : 'none');
+      document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    }
+  </script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+<body onload="switchLang('fr')">
+    <div class="bubbles">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+  <nav>
+    <a href="index.html">Accueil / Home</a>
+    <a href="apropos.html">À propos / About</a>
+    <a href="projets.html">Projets / Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="cv.html">Mon CV</a>
+    <button onclick="switchLang('fr')">FR</button>
+    <button onclick="switchLang('en')">EN</button>
+  </nav>
+  <main>
+    <section class="fr">
+  <h1>Contactez-moi</h1>
+  <p><i class="fas fa-envelope"></i> Email : <a href="mailto:sallahngom@gmail.com">sallahngom@gmail.com</a></p>
+  <p><i class="fas fa-phone"></i> Téléphone : <a href="tel:+221771863441">77 186 34 41</a></p>
+  <p><i class="fab fa-linkedin"></i> LinkedIn : <a href="https://www.linkedin.com/in/salla-ngom-949211370" target="_blank">Mon profil LinkedIn</a></p>
+</section>
+
+<section class="en">
+  <h1>Contact Me</h1>
+  <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sallahngom@gmail.com">sallahngom@gmail.com</a></p>
+  <p><i class="fas fa-phone"></i> Phone: <a href="tel:+221771863441">+221 77 186 34 41</a></p>
+  <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/salla-ngom-949211370" target="_blank">My LinkedIn Profile</a></p>
+</section>
+
+
+  </main>
+  <footer>
+  &copy; 2025 Salla Ngom — Tous droits réservés.
+</footer>
+
+  
+</body>
+</html>

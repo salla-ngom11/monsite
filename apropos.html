@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>À propos | About</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lang-switch {
+      text-align: right;
+      margin: 10px 20px;
+    }
+    .lang-switch button {
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+    <div class="bubbles">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+     <nav>
+    <a href="index.html">Accueil / Home</a>
+    <a href="apropos.html">À propos / About</a>
+    <a href="projets.html">Projets / Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="cv.html">Mon CV</a>
+    <button onclick="switchLang('fr')">FR</button>
+    <button onclick="switchLang('en')">EN</button>
+  </nav>
+
+  <div class="lang-switch">
+    <strong>Langue:</strong>
+    <button onclick="switchLang('fr')">Français</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
+  <!-- VERSION FRANÇAISE -->
+  <div id="about-fr">
+    <h1>À propos de moi</h1>
+    <p>
+      Je m'appelle <strong>Salla Ngom</strong>, une développeuse passionnée spécialisée en <strong>développement web et mobile</strong>. Depuis le début de mon parcours en informatique, je suis animée par une seule ambition : <em>créer des solutions utiles, accessibles et modernes</em> à travers le code.
+    </p>
+    <p>
+      Curieuse, autonome et toujours avide d'apprendre, je conçois des interfaces propres et fonctionnelles, alliant esthétique et performance. J’aime transformer des idées en expériences numériques fluides, que ce soit à travers des <strong>sites web dynamiques</strong> ou des <strong>applications mobiles réactives</strong>.
+    </p>
+    <p>
+      Actuellement en <strong>Licence 2 – Développement Web et Mobile</strong>, j’acquiers chaque jour de nouvelles compétences en HTML, CSS, JavaScript, MySQL, Java... et je prends plaisir à les mettre en pratique dans des projets concrets.
+    </p>
+    <p>
+      Mon objectif ? Allier technique, créativité et impact. Je crois au pouvoir du numérique pour améliorer la vie de tous — et j’ai envie d’en faire partie.
+    </p>
+    <p>
+      ✨ Que ce soit pour collaborer, partager une idée ou juste échanger : <strong>n’hésitez pas à me contacter !</strong>
+    </p>
+  </div>
+
+  <!-- VERSION ANGLAISE -->
+  <div id="about-en" class="hidden">
+    <h1>About Me</h1>
+    <p>
+      My name is <strong>Salla Ngom</strong>, and I’m a passionate developer specializing in <strong>web and mobile development</strong>. Since the beginning of my journey in tech, I’ve been driven by one goal: <em>building useful, accessible, and modern digital solutions</em> through code.
+    </p>
+    <p>
+      Curious, independent, and always eager to learn, I enjoy designing clean and functional interfaces that combine aesthetics and performance. I love turning ideas into smooth digital experiences, whether through <strong>dynamic websites</strong> or <strong>responsive mobile apps</strong>.
+    </p>
+    <p>
+      I’m currently pursuing a <strong>Bachelor's degree (Year 2) in Web and Mobile Development</strong>, gaining new skills every day in HTML, CSS, JavaScript, Flutter, MySQL, Java... and bringing them to life through real-world projects.
+    </p>
+    <p>
+      My goal? To blend technology, creativity, and impact. I truly believe in the power of digital tools to improve lives — and I want to be part of that change.
+    </p>
+    <p>
+      ✨ Whether it’s to collaborate, share ideas, or simply connect: <strong>feel free to reach out!</strong>
+    </p>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById("about-fr").classList.toggle("hidden", lang !== "fr");
+      document.getElementById("about-en").classList.toggle("hidden", lang !== "en");
+    }
+  </script>
+  <footer>
+  &copy; 2025 Salla Ngom — Tous droits réservés.
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.fr').forEach(el => el.style.display = lang === 'fr' ? 'block' : 'none');
+      document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    }
+  </script>
+</head>
+<body onload="switchLang('fr')">
+    <div class="bubbles">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+  <nav>
+    <a href="index.html">Accueil / Home</a>
+    <a href="apropos.html">À propos / About</a>
+    <a href="projets.html">Projets / Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="cv.html">Mon CV</a>
+    <button onclick="switchLang('fr')">FR</button>
+    <button onclick="switchLang('en')">EN</button>
+  </nav>
+  <main>
+    <section class="fr">
+        <h1>Salla Ngom </h1>
+       <h2>développeuse web/mobile</h2>
+       <img src="dev.jpg" alt="">
+      <h3>Bienvenue sur mon site !</h3>
+      <p>Je suis développeuse web et mobile. Découvrez mes projets et mon parcours.</p>
+    </section>
+    <section class="en">
+        <h1>Salla Ngom </h1>
+       <h2>web and mobile developer</h2>
+       <img src="woman.jpg" alt="">
+      <h3>Welcome to my website!</h3>
+      <p>I’m a web and mobile developer. Explore my projects and background.</p>
+    </section>
+  </main>
+
+    <footer>
+        <p>© 2025 Salla NGOM. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
